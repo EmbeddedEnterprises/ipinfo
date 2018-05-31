@@ -1,0 +1,23 @@
+name: ipinfo
+version: 0.1.0
+description: Simple HTTP server to return the peers ip address.
+authors:
+- Martin Koppehel
+license: ""
+package:
+  include: []
+args:
+  run: ""
+  go:
+    test: ""
+    build: ""
+    doc: ""
+    vet: ""
+    fmt: -s
+  glide:
+    install: ""
+    update: ""
+    get: ""
+  git:
+    tag: -s -m 'Update version'
+    clone: ""

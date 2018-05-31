@@ -1,0 +1,3 @@
+package: github.com/EmbeddedEnterprises/ipinfo
+import:
+- package: github.com/sebest/xff
