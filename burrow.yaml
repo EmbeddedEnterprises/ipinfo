@@ -1,5 +1,5 @@
 name: ipinfo
-version: 0.1.0
+version: 0.1.1
 description: Simple HTTP server to return the peers ip address.
 authors:
 - Martin Koppehel
