@@ -1,8 +1,10 @@
 # First stage - burrow
 FROM embeddedenterprises/burrow as builder
-RUN go get github.com/EmbeddedEnterprises/ipinfo
+RUN apk add build-base
+# Workaround for burrow not being able to clone this repo
+RUN go get -d github.com/EmbeddedEnterprises/ipinfo
 WORKDIR ${GOPATH}/src/github.com/EmbeddedEnterprises/ipinfo
-RUN burrow build
+RUN burrow e && burrow b && burrow i
 WORKDIR /data
 RUN mv ${GOPATH}/bin/ipinfo /data/ipinfo
 
